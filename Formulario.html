@@ -15,7 +15,37 @@
         <br>
         <label for="clave">Clave</label>
         <input type="password" name="clave" id="clave" placeholder="Ingrese clave">
-
+        <!-- el boton tipo submit envia todos los datos que se encuentran en ese formulario a el servidor por eso se debe estar trabajando con otro lenguaje de programacion -->
+        <br>
+        <input type="submit" name="submit" id="submit" value="Enviar">
+        <input type="reset" name="reset" id="reset" value="Limpiar">
+        <hr>
+        <!-- Para que los radio buttons funcionen bien el name de un grupo de radio buttons debe ser el mismo, el id y el value debe ser diferente -->
+        <h3>Seleccione el lugar de su residencia:</h3>
+        <label for="rural">Rural</label>
+        <input type="radio" name="lugar_resi" id="rural" value="1">
+        <label for="urbano">Urbano</label>
+        <input type="radio" name="lugar_resi" id="urbano" value="2">
+        <hr>
+        <h3>Seleccione sus marcas de celulares favoritas:</h3>
+        <input type="checkbox" name="marca1">Apple
+        <input type="checkbox" name="marca2">Huawei
+        <hr>
+        <h3>Seleccione la ciudad donde vive:</h3>
+        <select name="Ciudad" id="ciudad">
+            <option value="1">Cali</option>
+            <option value="2">Bogota</option>
+            <option value="3">Manizales</option>
+        </select>
+<!-- Para escoger multiples jeje  -->
+        <h3>Seleccione la ciudad donde ha vivido:</h3>
+        <h4>Presione la tecla Ctrl para seleccionar mas de una</h4>
+        <select name="Ciudad" id="ciudad" multiple size="3">
+            <option value="1">Cali</option>
+            <option value="2">Bogota</option>
+            <option value="3">Manizales</option>
+            <option value="4">Cartagena</option>
+        </select>
     </form>    
 
 </body>
